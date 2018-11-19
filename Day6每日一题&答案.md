@@ -2,46 +2,46 @@
 
 1. 你是如何理解matplotlib.pyplot库里面关于figure和axe的关系的？
 
-  figure和axes是plt中的对象名称， figure一般理解为一个画板，对应的是一个对话框，
-  axes一般翻译为“子图”，包含于figure
+     figure和axes是plt中的对象名称， figure一般理解为一个画板，对应的是一个对话框，
+     axes一般翻译为“子图”，包含于figure
 
 2. matplotlib.pyplot这个库生成的axe，如果我们要输入图表标题可以用plt.title('xxx')，那么如
-  果我们要修改x轴的标签名字可以怎么写？你发现了设置的规律了吗？
+     果我们要修改x轴的标签名字可以怎么写？你发现了设置的规律了吗？
 
-  matplotlib.pyplot 是一个绘图框架 修改x轴标签名, plt.xlabel("x"), 与MATLAB plot 用法类
-  似 xlabel('x')
+       matplotlib.pyplot 是一个绘图框架 修改x轴标签名, plt.xlabel("x"), 与MATLAB plot 用法类
+       似 xlabel('x')
 
 3. numpy当中有时候设置了random.seed(42)，称为随机种子。你理解的随机种子的作用是
-  什么？为什么很多时候看到的都是42？（提示：宇宙的终极答案）
+     什么？为什么很多时候看到的都是42？（提示：宇宙的终极答案）
 
-  np.random.seed()的作用：使得随机数据可预测。当我们设置相同的seed，每次生成的随
-  机数相同。如果不设置seed，则每次会生成不同的随机数；用'42'是作为种子是个人习惯,
-  起源于一部科幻小说。
+       np.random.seed()的作用：使得随机数据可预测。当我们设置相同的seed，每次生成的随
+       机数相同。如果不设置seed，则每次会生成不同的随机数；用'42'是作为种子是个人习惯,
+       起源于一部科幻小说。
 
 4. 你了解的jupyter notebook快捷键有哪三个？
 
-  1). shift+ctrl+p 调出命令面板 2). Esc+F 在代码中查找内容 3). Ctrl-Enter : 运行本单元
+     1). shift+ctrl+p 调出命令面板 2). Esc+F 在代码中查找内容 3). Ctrl-Enter : 运行本单元
 
 5. python定义函数用什么语句开头。
 
-  def function1(): 
+     def function1(): 
 
-  看到def 就知道定义了一个函数，后面是函数的名字。函数是写好的一段
-  代码。需要执行的时候只用调用就行： function1（）
+     看到def 就知道定义了一个函数，后面是函数的名字。函数是写好的一段
+     代码。需要执行的时候只用调用就行： function1（）
 
 6. 对于正态分布，有哪几个重要的变量？
 
-  均值和方差， 一般正态分布：均值为μ、方差为σ²
+     均值和方差， 一般正态分布：均值为μ、方差为σ²
 
 7. 常用的编辑器有哪些？
 
-  常用的代码编辑器： atom（开源/免费/跨平台，推荐）, sublime, vim, notepad++
-  python集成开发环境(IDE): PyCharm
-  python包管理工具：Anaconda（win平台强烈建议使用）
+     常用的代码编辑器： atom（开源/免费/跨平台，推荐）, sublime, vim, notepad++
+     python集成开发环境(IDE): PyCharm
+     python包管理工具：Anaconda（win平台强烈建议使用）
 
 8. 什么是矩阵？你能用Python的列表随便写一个简单的2*2矩阵吗？
 
-  在数学中，矩阵（Matrix）是一个按照长方阵列排列的复数或实数集合。
+     在数学中，矩阵（Matrix）是一个按照长方阵列排列的复数或实数集合。
 
   ```python
   from numpy import
@@ -52,10 +52,10 @@
   matrix([[ 0., 0.], [ 0., 0.]])
   ```
 
-9. python的条件语句应该用"=="还是"="？\
+9. python的条件语句应该用"=="还是"="？
 
-  Python条件语句是使用if else来表示，变量设定初始值时是用“=”，在判断条件时用“==”给
-  变量赋值。
+    Python条件语句是使用if else来表示，变量设定初始值时是用“=”，在判断条件时用“==”给
+     变量赋值。
 
 10. 你会如何向一个门外汉介绍朴素贝叶斯的原理？
 
@@ -91,4 +91,10 @@
     matplotlib.pyplot 是一个绘图框架 修改x轴标签名, plt.xlabel("x"), 与MATLAB plot 用法类
     似 xlabel('x')
 
-16.
+16.如何利用matplotlib给可视化图像添加图例？
+
+​	可以使用plt.legend()函数
+
+17.如何利用matplotlib给可视化图像添加平行坐标轴的指示线？
+
+​	可以使用plt.axvline()（平行于y轴）和plt.axhline()（平行于x轴）
