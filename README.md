@@ -34,4 +34,4 @@
 
 **Day7**（选修课程：函数和标准库）
 
-- [每日导学](https://github.com/CapAllen/DAND_intro_7/blob/master/Day5%E5%AF%BC%E5%AD%A6.md)
+- [每日导学](https://github.com/CapAllen/DAND_intro_7/blob/master/Day7%E5%AF%BC%E5%AD%A6.md)
